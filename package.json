@@ -1,0 +1,27 @@
+{
+  "name": "parking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-google-maps": "^2.4.1",
+    "clone-buffer": "^1.0.0",
+    "cloneable-readable": "^1.0.0",
+    "http-server": "^0.10.0",
+    "lodash": "^4.17.4",
+    "lru-cache": "^4.1.1",
+    "sigmund": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

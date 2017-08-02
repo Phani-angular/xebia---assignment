@@ -1,0 +1,23 @@
+{
+  "name": "parking",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Venkat "
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.5",
+    "angular": "^1.6.5",
+    "angular-ui-router": "^1.0.3",
+    "ngmap": "^1.18.4"
+  }
+}

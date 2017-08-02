@@ -1,0 +1,24 @@
+
+<div>
+    <div class="container ">
+        <div class="page-header ">
+            <h1> Find me available parking spots</h1>
+        </div>
+        <div class="row">
+          <ul>
+            <li ng-repeat="garage in home.garages"><a ng-click="home.selectGarage(garage)">
+              {{ garage.properties.title }} <span ng-class="{'green': home.isAvailable(garage)}"></span>
+            </a></li>
+          </ul>
+          <div class="map" ng-if="home.selectedGarage.selected == true">
+            <div class="dark">
+              Capacity: {{home.selectedGarage.capacity}} FreeSpace: {{home.selectedGarage.freeSpace}}
+            </div>
+            <div map-lazy-load="https://maps.google.com/maps/api/js">
+              <ng-map center="{{home.selectedGarage && home.selectedGarage.coord}}" zoom="18"></ng-map>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer></footer>
+</div>
